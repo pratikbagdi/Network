@@ -1,0 +1,30 @@
+Practical 7
+Aim – To write a program to implement Diffie-Hellman key exchange technique for symmetric Cryptography.
+
+Theory –
+The Diffie-Hellman key exchange is a cryptographic protocol used to establish a shared secret between two parties over an insecure channel. 
+This shared secret can then be used to encrypt subsequent communications using a symmetric encryption algorithm.
+
+Key Concepts
+    •	Public Key Cryptography: Unlike symmetric encryption, which uses the same key for both encryption and decryption, public key cryptography uses a pair of keys: a public key and a private key. The public key can be freely shared, while the private key must be kept secret.   
+    •	Modular Arithmetic: Diffie-Hellman relies on modular arithmetic, which involves performing arithmetic operations within a specific range (a modulus).
+
+The Diffie-Hellman Protocol
+1.	Agreement on Public Parameters: Both parties agree on two publicly known values: 
+    o	Prime number: A large prime number, denoted as p.
+    o	Generator: A number g that is a primitive root modulo p.
+2.	Generation of Private Keys: Each party generates a random private key: 
+    o	Alice: Generates a random private key a.
+    o	Bob: Generates a random private key b.
+3.	Calculation of Public Values: 
+    o	Alice: Calculates her public value A = g^a mod p and sends it to Bob.
+    o	Bob: Calculates his public value B = g^b mod p and sends it to Alice.
+4.	Calculation of Shared Secret: 
+    o	Alice: Calculates the shared secret s = B^a mod p.
+    o	Bob: Calculates the shared secret s = A^b mod p.
+
+Security
+The security of Diffie-Hellman relies on the discrete logarithm problem, which is computationally difficult to solve. This problem involves finding the exponent x in the equation g^x = y mod p.
+
+Conclusion –
+Hence, we have successfully implemented Diffie-Hellman key exchange technique for symmetric Cryptography.
