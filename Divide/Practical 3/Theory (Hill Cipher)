@@ -1,0 +1,33 @@
+Practical 3
+Aim – To write a program to implement Hill cipher for encryption and decryption.
+
+Theory –
+* The Hill Cipher uses a polygraphic substitution cipher, which means homogeneous substitution over many levels of blocks. 
+* This polygraphic substitution cipher allows Hill Cipher to function easily with digraphs (two-letter blocks), trigraphs (three-letter blocks), or any other multiple-sized blocks to create a uniform cipher.
+* Hill Cipher is based on linear algebra, advanced matrices (matrix multiplication and matrix inverses), and modulo arithmetic principles. Obviously, it is a more mathematical cipher than others.
+* Hill Cipher is also a block cipher. A block cipher uses a deterministic algorithm and a symmetric key to encrypt a block of text. 
+* Unlike stream ciphers, it does not require encrypting one bit at a time. Hill Cipher is a block cipher, which means it can function with any block size.
+* While Hill Cipher is digraphic in nature, it can grow to multiply any letter size, adding complexity and reliability for improved usage. 
+* Because most of Hill Ciphers' problems and solutions are mathematical in nature, it is simple to hide letters with precision.
+
+Encryption Process:
+    1.	Convert to Numerical Values: Convert each plaintext letter to a numerical value (e.g., A=0, B=1, ..., Z=25).
+    2.	Form Plaintext Vectors: Divide the plaintext into groups of letters and represent each group as a column vector.
+    3.	Matrix Multiplication: Multiply each plaintext vector by the key matrix. The result is the corresponding ciphertext vector.
+    4.	Convert to Ciphertext: Convert the numerical values in the ciphertext vector back to letters.
+    5.	Encrypting using the Hill cipher depends on the following operations –
+            E(K, P) = (K*P) mod 26
+            Here K is our key matrix, and P is the vectorized plaintext.
+
+Decryption Process:
+    1.	Convert to Numerical Values: Convert each ciphertext letter to a numerical value.
+    2.	Form Ciphertext Vectors: Divide the ciphertext into groups of letters and represent each group as a column vector.
+    3.	Inverse Matrix Multiplication: Multiply each ciphertext vector by the inverse of the key matrix. The result is the corresponding plaintext vector.
+    4.	Convert to Plaintext: Convert the numerical values in the plaintext vector back to letters.
+    5.	The Hill cipher decryption process is based on the following operation −
+            D(K, C) = (K-1 *C) mod 26
+            Here C is the vectorized ciphertext and K is our key matrix.
+
+Conclusion –
+Hence, we have performed the Hill cipher implementation for encryption and decryption successfully.
+
