@@ -1,0 +1,71 @@
+Practical 1
+Aim – Overview of Cryptography and Network Security
+
+Theory –
+Cryptography
+Cryptography is the practice and study of techniques for secure communication in the presence of third parties called adversaries. It involves developing and analyzing protocols that prevent malicious third parties from retrieving information being shared between two entities.   
+
+Principles of Cryptography
+The primary goals of cryptography are:
+•	Confidentiality: Ensuring that only authorized parties can access and understand data.
+•	Integrity: Protecting data from unauthorized modification or corruption.
+•	Availability: Guaranteeing that data and systems are accessible when needed.
+•	Authentication: Verifying the identity of communicating parties.
+•	Non-repudiation: Preventing parties from denying previous actions or commitments.
+
+Diagram and Explanation
+(Diagram 1)
+Fig: Basic Cryptography Process
+The diagram illustrates the fundamental process of cryptography:
+•	Plaintext: The original, readable data.
+•	Encryption: The process of converting plaintext into ciphertext using an encryption algorithm and a key.
+•	Ciphertext: The encrypted, unreadable data.
+•	Decryption: The process of converting ciphertext back into plaintext using the decryption algorithm and the key.
+
+Importance of Cryptography
+Cryptography is essential for protecting sensitive information in today's digital world. Its applications include:
+•	Secure communication: Protecting data transmitted over networks.
+•	Data protection: Safeguarding data at rest (e.g., in databases).
+•	Digital signatures: Verifying the authenticity and integrity of digital documents.
+•	Authentication: Verifying the identity of users and systems.
+
+Cryptography Attacks
+Cryptography attacks aim to compromise the security of cryptographic systems. Common types include:
+•	Ciphertext-only attack: The attacker has access only to the ciphertext.
+•	Known-plaintext attack: The attacker has access to both plaintext and corresponding ciphertext.
+•	Chosen-plaintext attack: The attacker can choose plaintexts and obtain the corresponding ciphertexts.
+•	Man-in-the-middle attack: An attacker intercepts and modifies communication between two parties.
+
+Network Security
+Network security involves protecting a computer network and its data from unauthorized access, use, disclosure, disruption, modification, or destruction. It encompasses hardware, software, and procedural measures.
+
+Network Security Model
+(Diagram 2)
+ 
+The network security model represents the secure communication between sender and receiver. This model depicts how the security service has been implemented over the network to prevent the opponent from causing a threat to the authenticity or confidentiality of the data that is being communicated through the network.
+•	Network security covers a huge amount of technologies, devices, and processes
+•	In simple words, it is a set of rules and regulations designed for protecting and securing the integrity, confidentiality, and accessibility of data and computer networks.
+•	The most common example of network security is password protection which was chosen by itself.
+
+Security Attacks
+Network security attacks can be classified into:
+•	Passive attacks: A Passive attack attempts to learn or make use of information from the system but does not affect system resources.
+  o	Eavesdropping: Unauthorized interception of network traffic to capture sensitive data. 
+  o	Traffic analysis: Analyzing network traffic patterns to infer information. 
+•	Active attacks: Active attacks are a type of cybersecurity attack in which an attacker attempts to alter, destroy, or disrupt the normal operation of a system or network. 
+  o	Masquerade: Impersonating a legitimate entity to gain unauthorized access. 
+  o	Replay attack: Reusing previously captured data to gain unauthorized access. 
+  o	Denial of Service (DoS) attack: Overwhelming a system or network with excessive traffic to render it unavailable.
+
+Importance of Network Security
+Network security is crucial for protecting sensitive data, maintaining business operations, and safeguarding against cyber threats. It helps build trust with customers and partners.
+
+Applications of Network Security
+Network security is applied in various domains:
+•	E-commerce: Protecting online transactions.
+•	Online banking: Securing financial information.
+•	Healthcare: Protecting patient data.
+•	Government: Safeguarding national security information.
+
+Conclusion –
+Cryptography and network security are fundamental to protecting digital assets and ensuring secure communication. They are essential components of modern information systems and require ongoing attention to address evolving threats.
