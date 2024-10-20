@@ -1,0 +1,36 @@
+Practical 10
+Aim – To write a program to implement SHA algorithm.
+
+Theory –
+The Secure Hash Algorithm (SHA) is a family of cryptographic hash functions developed by the National Security Agency (NSA) of the United States. 
+
+These functions are designed to produce a fixed-size output (hash value) from any given input message. 
+
+The hash value is used to verify the integrity of the message, ensuring that it has not been altered or tampered with.   
+
+The SHA family includes several variants, each with a different output size:
+    •	SHA-1: Produces a 160-bit hash value.
+    •	SHA-224: Produces a 224-bit hash value.
+    •	SHA-256: Produces a 256-bit hash value.
+    •	SHA-384: Produces a 384-bit hash value.
+    •	SHA-512: Produces a 512-bit hash value.
+
+All SHA algorithms are based on the same underlying principle: they break the input message into 512-bit blocks, and then apply a series of mathematical operations to each block to produce a hash value. 
+
+These operations include:
+    •	Message Padding: If the input message is not a multiple of 512 bits, it is padded with zeros and a single bit set to 1.
+    •	Block Processing: Each 512-bit block is processed through a series of rounds. In each round, the block is combined with a chaining variable, which is updated with the output of the round.
+    •	Output Generation: After all blocks have been processed, the final chaining variable is the hash value.
+
+The specific mathematical operations used in SHA algorithms are complex and involve various bitwise operations, arithmetic operations, and logical operations.
+
+The goal of these operations is to create a function that is resistant to collisions, meaning that it is unlikely that two different input messages will produce the same hash value.
+
+SHA algorithms are widely used in various applications, including digital signatures, password hashing, and data integrity verification. 
+
+They are considered to be secure, but it is important to use the appropriate variant for the specific application. 
+
+For example, SHA-1 is no longer considered secure due to the discovery of collision attacks, and it is recommended to use SHA-2 or SHA-3 instead.
+
+Conclusion –
+Hence, we have successfully implemented SHA algorithm.
