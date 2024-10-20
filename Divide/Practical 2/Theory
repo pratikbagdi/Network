@@ -1,0 +1,27 @@
+Practical 2
+Aim – To write a program to implement Playfair cipher for encryption and decryption.
+
+Theory –
+The Playfair cipher is a polygraphic substitution cipher that encrypts pairs of letters (digraphs) instead of single letters. 
+It was invented by Charles Wheatstone in 1854 and was used by the British military during the Boer War.
+1.	Key Generation:
+    o	Create a 5x5 square grid (matrix) filled with the letters of the alphabet, excluding the letter 'J' (which is considered equivalent to 'I').
+    o	Fill the remaining empty spaces with the remaining letters of the alphabet, starting with the letter 'I'.
+    o	The key is the 5x5 square grid.
+2.	Encryption:
+    o	Break the plaintext into pairs of letters. If there is an odd number of letters, add a 'X' to the end.
+    o	For each pair of letters: 
+        	If the two letters are in the same row of the key, replace each letter with the letter to its right (wrapping around if necessary).
+        	If the two letters are in the same column of the key, replace each letter with the letter below it (wrapping around if necessary).
+        	If the two letters are not in the same row or column, find the rectangle formed by the two letters. Replace each letter with the letter diagonally opposite it in the rectangle.
+3.	Decryption:
+    o	The decryption process is the reverse of the encryption process.
+    o	For each pair of ciphertext letters: 
+        	If the two letters are in the same row of the key, replace each letter with the letter to its left (wrapping around if necessary).
+        	If the two letters are in the same column of the key, replace each letter with the letter above it (wrapping around if necessary).
+        	If the two letters are not in the same row or column, find the rectangle formed by the two letters. Replace each letter with the letter diagonally opposite it in the rectangle.
+        	Remove any 'X' letters added during encryption.
+
+Conclusion –
+Hence, we have performed the Playfair cipher implementation for encryption and decryption successfully.
+
