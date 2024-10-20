@@ -1,0 +1,34 @@
+Practical 9
+Aim – To write a program to implement signature and digital signature technique.
+Theory –
+A digital signature is a cryptographic technique that provides authenticity, integrity, and non-repudiation for digital data. It ensures that the data has not been altered since it was signed and that it originates from the claimed signer.
+
+Components of a Digital Signature:
+    1.	Message: The data to be signed.
+    2.	Hash function: A cryptographic function that takes an input (the message) and produces a fixed-size output (the hash value).
+    3.	Private key: The signer's private key, used to create the signature.
+    4.	Public key: The signer's public key, used to verify the signature.
+
+Digital Signature Process:
+    1.	Hashing: The message is hashed using a cryptographically secure hash function (e.g., SHA-256).
+    2.	Signing: The signer's private key is used to encrypt the hash value, creating the digital signature.
+    3.	Transmission: The message and the digital signature are transmitted to the recipient.
+
+Verification Process:
+    1.	Hashing: The recipient hashes the received message using the same hash function.
+    2.	Decryption: The recipient uses the signer's public key to decrypt the digital signature.
+    3.	Comparison: The decrypted hash value is compared to the hash value calculated in step 1. If they match, the signature is valid.
+
+Security Properties:
+    •	Authenticity: The signature ensures that the message originated from the claimed signer.
+    •	Integrity: The signature verifies that the message has not been altered since it was signed.
+    •	Non-repudiation: The signer cannot deny having signed the message.
+
+Applications:
+    •	Email: To verify the authenticity of email messages.
+    •	Digital documents: To ensure the integrity and authenticity of electronic documents.
+    •	Secure communication: To protect the confidentiality and integrity of data transmitted over a network.
+    •	Digital certificates: To authenticate individuals, organizations, and devices.
+
+Conclusion –
+Hence, we have successfully implemented signature and digital signature technique.
