@@ -1,0 +1,35 @@
+Practical 5
+Aim – To write a program to implement Blowfish Algorithm.
+
+Theory –
+Blowfish is a symmetric block cipher designed by Bruce Schneier in 1993. 
+It was intended as a replacement for DES (Data Encryption Standard) and IDEA (International Data Encryption Algorithm). 
+Blowfish is known for its speed, simplicity, and security, making it a popular choice for various cryptographic applications.
+
+Key Points:
+•	Block Size: Blowfish operates on 64-bit blocks of data.
+•	Key Length: The key can be of any length between 32 and 448 bits.
+•	Structure: It uses a combination of Feistel network and substitution-permutation network (SPN) structures.
+•	Key Expansion: The key expansion process generates 18 subkeys of 32 bits each.
+
+Blowfish Algorithm:
+1.	Key Expansion:
+    o	The key is divided into 16 32-bit subkeys.
+    o	An initialization vector (IV) is used to initialize the subkeys.
+    o	A series of iterations is performed to generate the remaining subkeys.
+2.	Encryption:
+    o	The plaintext is divided into 64-bit blocks.
+    o	Each block is processed in 16 rounds.
+    o	In each round: 
+        	The block is divided into two 32-bit halves, L and R.
+        	The left half (L) is XORed with a subkey.
+        	The result is passed through a substitution function (S-box) and XORed with the right half (R).
+        	The right half (R) becomes the new left half (L) for the next round.
+    o	After 16 rounds, the halves are swapped, and the final ciphertext is obtained.
+3.	Decryption:
+    o	The ciphertext is divided into 64-bit blocks.
+    o	The same key expansion process is used.
+    o	The decryption process involves reversing the encryption steps, using the same subkeys in reverse order.
+
+Conclusion –
+Hence, we have successfully implemented Blowfish algorithm.
