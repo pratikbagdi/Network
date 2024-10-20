@@ -1,0 +1,14 @@
+Practical 4
+Aim – To write a program to implement DES algorithm.
+
+Theory –
+* The Data Encryption Standard algorithm is a block cipher algorithm that takes in 64-bit blocks of plaintext at a time as input and produces 64-bit blocks of cipher text at a time, using a 48-bit key for each input. 
+* In block cipher algorithms, the text to be encrypted is broken into ‘blocks’ of text, and each block is encrypted separately using the key.
+* The decryption process is the exact opposite of the encryption. It takes in a 64 bit block of ciphertext, and produces the 64 bit block of plaintext using the same 48 bit key during encryption.
+* The encryptor and the decryptor need to use the same key, otherwise, they will not be able to communicate together.
+* The DES algorithm was successful in the early days of the internet, but its short key length of 56 bits makes it too insecure for today’s applications. 
+* With the evolution of technology and the increase in computing power, an attacker with sufficient computing resources can break the key within a few minutes. 
+* It has however been highly influential in the development and advancement of cryptography.
+
+Conclusion –
+Hence, we have successfully implemented DES algorithm.
