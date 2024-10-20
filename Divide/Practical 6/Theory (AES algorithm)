@@ -1,0 +1,27 @@
+Practical 6
+Aim – To write a program to implement AES algorithm.
+
+Theory –
+The Advanced Encryption Standard (AES) is a symmetric block cipher adopted by the U.S. government as a standard for encrypting sensitive but unclassified information. 
+It's considered to be highly secure due to its complexity and the absence of any known practical attacks against it.
+
+AES Algorithm Overview
+AES operates on 128-bit blocks of data, and uses a 128-, 192-, or 256-bit key. The encryption process involves a series of rounds, each consisting of four transformations:
+    1.	SubBytes: Replaces each byte in the block with a new byte from a substitution table.
+    2.	ShiftRows: Cyclically shifts each row of the block by a certain number of positions.
+    3.	MixColumns: Performs a matrix multiplication on each column of the block.
+    4.	AddRoundKey: XORs the block with a round key derived from the main key.
+The number of rounds depends on the key length: 10 rounds for 128-bit keys, 12 rounds for 192-bit keys, and 14 rounds for 256-bit keys.   
+
+Key Expansion
+Before the encryption process begins, the main key is expanded into a series of round keys. This is done using a key schedule algorithm that involves a combination of rotations, substitutions, and XOR operations.
+
+Implementation Considerations
+When implementing AES, several factors need to be considered:
+    •	Key Length: Choose the appropriate key length based on the security requirements of your application.
+    •	Mode of Operation: AES is a block cipher, so it needs to be used in a mode of operation like Electronic Codebook (ECB), Cipher Block Chaining (CBC), Counter (CTR), etc.
+    •	Padding: If the plaintext length is not a multiple of the block size, padding is required. Common padding schemes include PKCS#7 and Zero Padding.
+    •	Performance: The efficiency of the implementation depends on various factors, such as the programming language, the optimization techniques used, and the hardware capabilities of the system.
+
+Conclusion –
+Hence, we have successfully implemented AES algorithm.
